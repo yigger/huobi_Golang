@@ -3,11 +3,12 @@ package client
 import (
 	"encoding/json"
 	"errors"
-	"github.com/huobirdcenter/huobi_golang/internal"
-	"github.com/huobirdcenter/huobi_golang/internal/requestbuilder"
-	"github.com/huobirdcenter/huobi_golang/pkg/getrequest"
-	"github.com/huobirdcenter/huobi_golang/pkg/response/market"
 	"strconv"
+
+	"github.com/yigger/huobi_golang/internal"
+	"github.com/yigger/huobi_golang/internal/requestbuilder"
+	"github.com/yigger/huobi_golang/pkg/getrequest"
+	"github.com/yigger/huobi_golang/pkg/response/market""
 )
 
 // Responsible to get market information

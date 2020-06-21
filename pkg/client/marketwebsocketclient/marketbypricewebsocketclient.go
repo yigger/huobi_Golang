@@ -3,9 +3,9 @@ package marketwebsocketclient
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/huobirdcenter/huobi_golang/logging/applogger"
-	"github.com/huobirdcenter/huobi_golang/pkg/client/websocketclientbase"
-	"github.com/huobirdcenter/huobi_golang/pkg/response/market"
+	"github.com/yigger/huobi_golang/logging/applogger"
+	"github.com/yigger/huobi_golang/pkg/client/websocketclientbase"
+	"github.com/yigger/huobi_golang/pkg/response/market"
 )
 
 // Responsible to handle MBP data from WebSocket

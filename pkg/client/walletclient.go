@@ -3,12 +3,13 @@ package client
 import (
 	"encoding/json"
 	"errors"
-	"github.com/huobirdcenter/huobi_golang/internal"
-	"github.com/huobirdcenter/huobi_golang/internal/requestbuilder"
-	"github.com/huobirdcenter/huobi_golang/pkg/getrequest"
-	"github.com/huobirdcenter/huobi_golang/pkg/postrequest"
-	"github.com/huobirdcenter/huobi_golang/pkg/response/wallet"
 	"strconv"
+
+	"github.com/yigger/huobi_golang/internal"
+	"github.com/yigger/huobi_golang/internal/requestbuilder"
+	"github.com/yigger/huobi_golang/pkg/getrequest"
+	"github.com/yigger/huobi_golang/pkg/postrequest"
+	"github.com/yigger/huobi_golang/pkg/response/wallet""
 )
 
 // Responsible to operate wallet
@@ -210,4 +211,5 @@ func (p *WalletClient) QuerySubUserDepositHistory(subUid int64, optionalRequest 
 		return result.Data, nil
 	}
 	return nil, errors.New(getResp)
+
 }

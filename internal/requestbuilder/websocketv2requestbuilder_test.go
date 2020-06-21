@@ -2,9 +2,10 @@ package requestbuilder
 
 import (
 	"encoding/json"
-	"github.com/huobirdcenter/huobi_golang/internal/model"
 	"testing"
 	"time"
+
+	"github.com/yigger/huobi_golang/internal/model""
 )
 
 func TestWebSocketV2RequestBuilder_build_Time_Success(t *testing.T) {

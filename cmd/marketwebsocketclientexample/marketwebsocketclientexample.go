@@ -2,11 +2,12 @@ package marketwebsocketclientexample
 
 import (
 	"fmt"
-	"github.com/huobirdcenter/huobi_golang/config"
-	"github.com/huobirdcenter/huobi_golang/logging/applogger"
-	"github.com/huobirdcenter/huobi_golang/pkg/client/marketwebsocketclient"
-	"github.com/huobirdcenter/huobi_golang/pkg/getrequest"
-	"github.com/huobirdcenter/huobi_golang/pkg/response/market"
+
+	"github.com/yigger/huobi_golang/config"
+	"github.com/yigger/huobi_golang/logging/applogger"
+	"github.com/yigger/huobi_golang/pkg/client/marketwebsocketclient"
+	"github.com/yigger/huobi_golang/pkg/getrequest"
+	"github.com/yigger/huobi_golang/pkg/response/market"
 )
 
 func RunAllExamples() {
@@ -151,7 +152,7 @@ func reqAndSubscribeMarketByPrice() {
 						if t.Asks != nil {
 							applogger.Info("Ask, count=%d", len(t.Asks))
 							for i := len(t.Asks) - 1; i >= 0; i-- {
-								applogger.Info("%v - %v" +
+								applogger.Info("%v - %v"+
 									"", t.Asks[i][0], t.Asks[i][1])
 							}
 						}
@@ -199,7 +200,6 @@ func reqAndSubscribeMarketByPrice() {
 	applogger.Info("Client closed")
 }
 
-
 func subscribeFullMarketByPrice() {
 
 	client := new(marketwebsocketclient.MarketByPriceWebSocketClient).Init(config.Host)
@@ -245,7 +245,6 @@ func subscribeFullMarketByPrice() {
 	client.Close()
 	applogger.Info("Client closed")
 }
-
 
 func subscribeBBO() {
 

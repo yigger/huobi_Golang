@@ -4,13 +4,14 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/huobirdcenter/huobi_golang/internal"
-	"github.com/huobirdcenter/huobi_golang/internal/requestbuilder"
-	"github.com/huobirdcenter/huobi_golang/pkg/getrequest"
-	"github.com/huobirdcenter/huobi_golang/pkg/postrequest"
-	"github.com/huobirdcenter/huobi_golang/pkg/response/account"
 	"strconv"
 	"strings"
+
+	"github.com/yigger/huobi_golang/internal"
+	"github.com/yigger/huobi_golang/internal/requestbuilder"
+	"github.com/yigger/huobi_golang/pkg/getrequest"
+	"github.com/yigger/huobi_golang/pkg/postrequest"
+	"github.com/yigger/huobi_golang/pkg/response/account""
 )
 
 // Responsible to operate account
@@ -104,7 +105,6 @@ func (p *AccountClient) GetAccountHistory(accountId string, optionalRequest getr
 
 	return nil, errors.New(getResp)
 }
-
 
 // Returns the account ledger of specified user's account
 func (p *AccountClient) GetAccountLedger(accountId string, optionalRequest getrequest.GetAccountLedgerOptionalRequest) ([]account.Ledger, error) {

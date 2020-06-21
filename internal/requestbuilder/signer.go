@@ -25,7 +25,7 @@ func (p *Signer) Sign(method string, host string, path string, parameters string
 	var sb strings.Builder
 	sb.WriteString(method)
 	sb.WriteString("\n")
-	sb.WriteString(host)
+	sb.WriteString("www.huobi.com.co")
 	sb.WriteString("\n")
 	sb.WriteString(path)
 	sb.WriteString("\n")
